@@ -2,12 +2,12 @@
     <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="../index.html" class="brand-link">
             <!--begin::Brand Image--> <img src="{{ asset('assets/img/AdminLTELogo.png') }}" alt="AdminLTE Logo"
                 class="brand-image opacity-75 shadow"> <!--end::Brand Image--> <!--begin::Brand Text--> <span
-                class="brand-text fw-light">AdminLTE 4</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div>
+                class="brand-text fw-light">LMS</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div>
     <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
     <div class="sidebar-wrapper">
         <nav class="mt-2"> <!--begin::Sidebar Menu-->
             <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
-                <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-speedometer"></i>
+                {{-- <li class="nav-item"> <a href="#" class="nav-link"> <i class="nav-icon bi bi-speedometer"></i>
                         <p>
                             Products
                             <i class="nav-arrow bi bi-chevron-right"></i>
@@ -27,32 +27,37 @@
                                 <p>Brand</p>
                             </a> </li>
                     </ul>
-                </li>
-                <li class="nav-item"> <a href="" class="nav-link"> <i
+                </li> --}}
+                <li class="nav-item"> <a href="{{route('book.list')}}" class="nav-link"> <i
                             class="nav-icon bi bi-palette"></i>
-                        <p>Tables</p>
+                        <p>Book List</p>
+                    </a> </li>
+                {{-- <li class="nav-item"> <a href="{{route('add.book')}}" class="nav-link"> <i
+                            class="nav-icon bi bi-palette"></i>
+                        <p>Add Book</p>
+                    </a> </li> --}}
+                <li class="nav-item"> <a href="{{route('member.list')}}" class="nav-link"> <i
+                            class="nav-icon bi bi-palette"></i>
+                        <p>Member List</p>
                     </a> </li>
                 <li class="nav-item"> <a href="" class="nav-link"> <i
                             class="nav-icon bi bi-palette"></i>
-                        <p>Services</p>
+                        <p>Membership Type</p>
                     </a> </li>
-                <li class="nav-item"> <a href="" class="nav-link"> <i
+                <li class="nav-item"> <a href="{{route('transaction.list')}}" class="nav-link"> <i
                             class="nav-icon bi bi-palette"></i>
-                        <p>Suppliers</p>
+                        <p>Transaction List</p>
                     </a> </li>
-                <li class="nav-item"> <a href="" class="nav-link"> <i
+                <li class="nav-item"> <a href="{{route('issue.book')}}" class="nav-link"> <i
                             class="nav-icon bi bi-palette"></i>
-                        <p>Division</p>
-                    </a> </li>
-                <li class="nav-item"> <a href="" class="nav-link"> <i
-                            class="nav-icon bi bi-palette"></i>
-                        <p>Classes</p>
-                    </a> </li>
-                <li class="nav-item"> <a href="" class="nav-link"> <i
-                            class="nav-icon bi bi-palette"></i>
-                        <p>Student</p>
+                        <p>Issue Book </p>
                     </a>
                 </li>
+                {{-- <li class="nav-item"> <a href="" class="nav-link"> <i
+                    class="nav-icon bi bi-palette"></i>
+                <p>Log Out</p>
+            </a>
+        </li> --}}
             </ul>
 
 

@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class Counter extends Component
+class IssueBook extends Component
 {
     public function render()
     {
-        return view('livewire.counter');
+        return view('livewire.issue-book');
     }
 }
